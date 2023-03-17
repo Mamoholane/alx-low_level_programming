@@ -1,4 +1,3 @@
-0-positive_or_negative.txt
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
