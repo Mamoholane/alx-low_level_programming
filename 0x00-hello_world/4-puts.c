@@ -4,8 +4,8 @@
  * main - print the string in the put function
  * 
  * Description: using the main function
- * This Programming is like building a multilingual puzzle
- * Return:0
+ * this program is like building a multilingual puzzle
+ * Return: 0
  */
 int main(void)
 {
