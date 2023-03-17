@@ -1,4 +1,3 @@
-Task 3.txt
 #include <stdio.h>
 
 /**
