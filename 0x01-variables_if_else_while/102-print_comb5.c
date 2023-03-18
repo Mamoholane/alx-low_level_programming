@@ -1,4 +1,3 @@
-0-positive_or_negative.txt
 #include <stdio.h>
 
 /**
