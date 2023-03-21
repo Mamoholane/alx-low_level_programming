@@ -1,4 +1,3 @@
-1-alphabet.txt
 #include "main.h"
 
 /**
