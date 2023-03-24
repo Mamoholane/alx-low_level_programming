@@ -1,26 +1,23 @@
-#include "main.h"
+#include <stdio.h>
+
+#include <stdlib.h>
+
+#include <time.h>
 
 /**
- * more_numbers - prints numbers to 14
- *
- * Return: ALways 0 
- */
+ * main - Entry point
+ * Return: Always 0 (success)
+*/
 
-void more_numbers(void)
+int main(void)
 
 {
-	int n1, n2;
 	
-	for (n1 = 0; n1 < 10; n1++)
-	{
-		for (n2 = 0; n2 <= 14; n2++)
-		{
-			if (n2 > 9)
-			{       
-				_putchar((n2/10) + '0');
-			}
-			_putchar((n2 % 10) + '0');
-		}
-		_putchar('\n');
-	}
+	int i;
+	
+	for (i = 0; i<10; i++)
+	printf("%d", i);
+	printf("\n");
+
+	return (0)
 }
