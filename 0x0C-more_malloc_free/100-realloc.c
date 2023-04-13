@@ -1,4 +1,3 @@
-0-malloc_checked.txt
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
