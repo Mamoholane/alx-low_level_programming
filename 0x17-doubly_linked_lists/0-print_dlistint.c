@@ -1,34 +1,26 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
+/*
+ * File: 0-print_dlistint.c
+ * Auth: Ofugeez
+ */
+
 #include "lists.h"
 
 /**
- * main - check the code
+ * print_dlistint - Prints all the elements of a dlistint_t list.
+ * @h: The head of the dlistint_t list.
  *
- * Return: Always EXIT_SUCCESS.
+ * Return: The number of nodes in the list.
  */
-int main(void)
+size_t print_dlistint(const dlistint_t *h)
 {
-	dlistint_t *head;
-	dlistint_t *new;
-	dlistint_t hello = {8, NULL, NULL};
-	size_t n;
+	size_t nodes = 0;
 
-	head = &hello;
-	new = malloc(sizeof(dlistint_t));
-	if (new == NULL)
+	while (h)
 	{
-		dprintf(2, "Error: Can't malloc\n");
-		return (EXIT_FAILURE);
+		nodes++;
+		printf("%d\n", h->n);
+		h = h->next;
 	}
-	new->n = 9;
-	head->prev = new;
-	new->next = head;
-	new->prev = NULL;
-	head = new;
-	n = print_dlistint(head);
-	printf("-> %lu elements\n", n);
-	free(new);
-	return (EXIT_SUCCESS);
+
+	return (nodes);
 }
